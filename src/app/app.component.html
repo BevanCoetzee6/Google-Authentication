@@ -1,3 +1,24 @@
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="container custom-container" style="text-align: right;">
+  <mat-menu #appMenu="matMenu" xPosition="after">
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>help</mat-icon>
+      <span>Help</span>
+    </button>
+  </mat-menu>
+
+  <!-- <button class="btn btn-twitter" mat-button [matMenuTriggerFor]="appMenu"><img src="../assets/more_horiz-24px.svg"></button> -->
+  <button class="btn btn-outline-warning" mat-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>dehaze</mat-icon>
+  </button>
+</div>
+
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>

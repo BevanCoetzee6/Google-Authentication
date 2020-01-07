@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>
+      Nucleo SVG Sprite
+     </title>
+    </head>
+    <body class="" style="background-color: #ffffff">
+     <ul>
+      <li>
+       <div class="svg-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+         <g class="nc-icon-wrapper" stroke="none" fill="#111111">
+          <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z">
+          </path>
+         </g>
+        </svg>
+       </div>
+       <p>
+        .icon.icon-ic_settings_24px
+       </p>
+      </li>
+     </ul>
+     <style>
+      *, *::after, *::before { box-sizing: border-box;}html {font-size: 62.5%;}svg {max-width: 96px; max-height: 96px; display: block;}body {font-size: 1.6rem; font-family: sans-serif; margin: 0; padding: 0;}ul {list-style: none; display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 24px; margin: 0;}ul li {position: relative; display:flex; justify-content: center; align-items: center; width: 160px; height: 160px; padding: 0 0 16px; text-align: center; border-radius: .25em; cursor: pointer; transition: background 0.2s;}ul li:hover {background: rgba(0,0,0,0.05);} .dark-background ul li:hover {background: rgba(255,255,255,0.08)}ul p {font-size: 1.1rem; color: rgba(0,0,0,0.6); margin: 0; -webkit-user-select: auto; -moz-user-select: auto; -ms-user-select: auto; user-select: auto; position: absolute; width: 100%; left: 0; bottom: 18px; white-space: nowrap; padding: 0 20px; overflow: hidden; text-overflow: ellipsis;}.dark-background ul p {color: rgba(255,255,255,0.9)}ul p::selection {background: rgba(0,0,0,0.9); color: #fff;}ul p::-moz-selection {background: rgba(0,0,0,0.9); color: #fff;}.dark-background ul p::selection {background: rgba(255,255,255,0.9); color: rgba(0,0,0,0.9);}.dark-background ul p::-moz-selection {background: rgba(255,255,255,0.9); color: rgba(0,0,0,0.9);}
+     </style>
+     <script>
+       function SelectText(element) { var doc = document , text = element , range, selection; if (doc.body.createTextRange) { range = document.body.createTextRange(); range.moveToElementText(text); range.select(); } else if (window.getSelection) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(text); selection.removeAllRanges(); selection.addRange(range); }} window.onload = function() { var listItems = document.getElementsByTagName("li"); for (var i = 0; i 
+     < listItems.length; i++) { listItems[i].onclick = function fun() { var item = this.getElementsByTagName("p"); SelectText(item[0]); }} }</script>
+    </body>
+   </html>

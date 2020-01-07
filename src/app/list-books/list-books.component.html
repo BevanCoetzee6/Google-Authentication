@@ -8,7 +8,7 @@
 
   <!--Employees list table, it hides when there is no employee-->
   <div *ngIf="bookData.totalItems !== 0">
-      <div class="col-md-12">
+      <div class="col-md-15">
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -28,13 +28,16 @@
                   [alt]=book.volumeInfo.title class="img-responsive" style="max-height: 250px; text-align: center;"
                 >
               </td>
-              <td>
-                <button class="btn btn-outline-success" (click)="getBookDetails(book.id)">Get Book Details</button>
+              <td style="text-align: center;">
+                <button class="btn btn-outline-success btn-rounded" (click)="getBookDetails(book.id)">
+                  <img src="../../assets/ic_book_48px.svg" style="max-height: 20px; text-align: left;">
+                  <span>Get Book Details</span>
+                </button>
               </td>
             </tr>
           </tbody>
         </table>
-        <button class="btn btn-outline-primary" routerLink="/">Search Another Book</button>
+        <button class="btn btn-outline-primary btn-rounded" routerLink="/">Search Another Book</button>
         <!-- <button class="btn btn-outline-warning" routerLink="">Back</button> -->
       </div>
   </div>
