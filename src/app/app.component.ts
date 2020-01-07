@@ -1,7 +1,5 @@
-import { Component, Input, ViewChild, Directive } from '@angular/core';
-import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
-import { transition, animate, state, style, trigger } from '@angular/animations';
+import { Component, ViewChild } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-root',
